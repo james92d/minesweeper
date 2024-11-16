@@ -30,6 +30,11 @@ td {
     background-color: #444444;
 }
 
+.no-1 {
+    background-image: url("../assets/mine.png");
+    align-items: center;
+}
+
 .no1 {
     color: aqua;
 }
@@ -60,9 +65,4 @@ td {
 
 .no8 {
     color: gray;
-}
-
-.mine {
-    background-image: url("../assets/mine.png");
-    align-items: center;
 }

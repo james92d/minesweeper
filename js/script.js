@@ -71,9 +71,8 @@ gameBoard.forEach((row, rowIndex) => {
     row.forEach(cell => {
       const td = document.createElement('td');
       if (cell === -1) {
-        const img = document.createElement('img');
-        img.src = minePng;
-        td.appendChild(img);
+        td.className = "no" + cell.toString();
+        td.textContent = "";
       } else if (cell === 0) {
         td.textContent = "";
       } else {
