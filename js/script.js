@@ -16,9 +16,10 @@ function getRandIndex(num) {
 
 while (minesCount <= totalMines) {
     let pos = [getRandIndex(rows), getRandIndex(cols)];
+    let posStr = pos.join(",");
 
-    if (!minePositions.includes(pos)) {
-        minePositions.push(pos);
+    if (!minePositions.includes(posStr)) {
+        minePositions.push(posStr);
         gameBoard[pos[0]][pos[1]] = -1;
         minesCount++;
     }
